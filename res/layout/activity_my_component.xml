@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:p="http://schemas.android.com/apk/res/com.example.com.jfcogato.mycomponent"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <com.example.com.jfcogato.mycomponent.Less_Allocated_ImageView
+        android:id="@+id/tAImageView1"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        p:cache="true"
+        p:src="@drawable/fake_the_faker" />
+
+    <com.example.com.jfcogato.mycomponent.Less_Allocated_ImageView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        p:cache="false"
+        p:src="@drawable/fake_bidi_2_screen" />
+
+    <com.example.com.jfcogato.mycomponent.Less_Allocated_ImageView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        p:cache="false"
+        p:src="@drawable/fake_the_faker" />
+
+</RelativeLayout>
